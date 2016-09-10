@@ -1,0 +1,91 @@
+// import the CSS framework
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+}
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+}
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+}
+.form {
+  @extend .col-md-6;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 20px 0 10px 0;
+  font-size: 16px;
+  width: 300px;
+  left: 37%;
+}
+input[type=text],
+input[type=email],
+input[type=password] {
+  color: #666666;
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px;
+  height: 60px;
+  margin: 6px auto;
+  text-indent: 10px;
+}
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+  margin: 0 auto 0 auto;
+}
+.btn-submit {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #c91717;
+  padding: 10px 20px;
+  border: 0;
+  margin-top: 6px;
+}
+.btn-normal {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #494d5d;
+  padding: 10px 20px;
+  border: 0;
+  margin-top: 6px;
+}
+.btn-small {
+  color: #FFFFFF;
+  font-size: 12px;
+  text-transform: lowercase;
+  background: #000000;
+  padding: 4px 8px;
+  border: 0;
+  margin-top: 3px;
+}
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+}
+// apply styles to HTML elements
+// to make views framework-neutral
+main {
+  @extend .container;
+  background-color: #eee;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 51px; // accommodate the navbar
+}
+section {
+  @extend .row;
+  margin-top: 20px;
+}

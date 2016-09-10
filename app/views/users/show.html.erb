@@ -1,0 +1,14 @@
+<% provide(:title, "Show User") %>
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+
+<%= button_to 'Edit', edit_user_path(@user), class: "btn-normal" %>
+<%= button_to 'Back', homepage_path, class: "btn-normal" %>

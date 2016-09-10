@@ -1,0 +1,22 @@
+<% provide(:title, "Fotos") %>
+<center><table>
+  <tbody>
+  <% @fotos.each do |foto| %>
+      <tr>
+        <td><%= foto.title %></td>
+        <td><%= foto.date %></td>
+        <td><%= foto.content %></td>
+        <td><%= foto.user_id %></td>
+        <td><%= foto.username %></td>
+        <td><%= foto.image %></td>
+        <td><%= link_to 'Show', foto, class: "btn-small" %></td>
+        <td><%= link_to 'Edit', foto, method: :edit, class: "btn-small" %></td>
+        <td><%= link_to 'Destroy', foto, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-small" %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table></center>
+
+<br>
+
+<center><%= button_to 'New Foto', new_foto_path, class: "btn-submit" %></center>

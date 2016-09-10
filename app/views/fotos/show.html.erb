@@ -1,0 +1,26 @@
+<% provide(:title, "Foto") %>
+<p>
+  <strong>Title:</strong>
+  <%= @foto.title %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @foto.date %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @foto.content %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @foto.username %>
+</p>
+
+<h1><%= link_to image_tag(@foto.image.url(:med)), @foto.image.url %></h1>
+
+<%= link_to 'Edit', edit_foto_path, class: "btn-normal" %>
+<%= link_to 'Back', homepage_path, class: "btn-normal" %>
+
