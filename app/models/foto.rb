@@ -8,7 +8,7 @@ class Foto < ActiveRecord::Base
 
                     # The full URL of where the attachment is publicly accessible.
                     # This supports Paperclip::Interpolations.
-                    :url => "http://ENV["HOST"]/fotasia.cba.pl/:attachment/:id/:style/:filename",
+                    :url => "http://95.211.80.5/fotasia.cba.pl/:attachment/:id/:style/:filename",
 
                     # The list of FTP servers to use
                     :ftp_servers => [
