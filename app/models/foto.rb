@@ -4,11 +4,11 @@ class Foto < ActiveRecord::Base
                     :storage => :ftp,
                     # Set where to store the file on the FTP server(s).
                     # This supports Paperclip::Interpolations.
-                    :path => "/public_html/:attachment/:id/:style/:filename",
+                    :path => "/fotasia.cba.pl/:attachment/:id/:style/:filename",
 
                     # The full URL of where the attachment is publicly accessible.
                     # This supports Paperclip::Interpolations.
-                    :url => "http://fotasia.esy.es/:attachment/:id/:style/:filename",
+                    :url => "http://fotasia.cba.pl/:attachment/:id/:style/:filename",
 
                     # The list of FTP servers to use
                     :ftp_servers => [
